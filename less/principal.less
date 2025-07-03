@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+}
+html {
+    height: 100%;
+}
+body {
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    display:flex;
+    flex-direction: column;
+}
+main {
+    flex:1;
+    h2{
+        color: #333;
+        font-size: 2em;
+        text-align: center;
+        font-family: @fuente;
+        font-weight: bold;
+        margin: 10px 0;
+        padding: 0.1rem;
+        margin: 0;
+        &:hover {
+            background-color: antiquewhite;
+            color: #000;
+            cursor: pointer;
+        }
+    }
+}
+
+@import "header.less";
+@import "hero.less";
+@import "cards.less";
+@import "galeria.less";
+@import "footer.less";
+@import "tabla.less";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+@fuente: 'Poppins', sans-serif;

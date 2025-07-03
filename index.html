@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="less/principal.less" />
+  <title>Repaso de Less y HBS</title>
+</head>
+
+<body>
+  {{>header}}
+  <main>
+    {{>hero}}
+    <h2 id="Servicios">Servicios</h2>
+    {{>cards cardDesplay=cartas1}}
+    <h2 id="Galeria">Galeria</h2>
+    {{>galeria galeriaItems=galeria1}}
+    <h2 id="Contacto">Contacto</h2>
+    <div class="tabla-contenedor">
+      {{>tabla contacto=contacto1}}
+    </div>
+  </main>
+  {{>footer}}
+
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+.galeria{
+    margin-top: 10px;
+    font-family: @fuente;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    .galeria-item{
+        position: relative;
+        width: 300px;
+        height: 300px;
+        img{
+            width: 99%;
+            height: 90%;
+            object-fit: cover;
+            border-radius: 9px;
+        }
+        p{
+            text-align: center;
+            width: 100%;
+            padding: 2px;
+            border-radius: 10px;
+            background-color: rgba(255, 255, 255, 0.523);
+            font-size: 1.5rem;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            top: 77%;
+            left: 50%;
+        }
+    }
+}
